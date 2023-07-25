@@ -1,0 +1,21 @@
+<h1>If Component</h1>
+<p *ngIf = true>This line will be displayed if condition is true 1</p>
+<p *ngIf = "false else elseBlock1" >This line will be displayed if condition is true 2</p>
+<ng-template #elseBlock1>
+    <p >This line will be displayed if condition is false</p>
+</ng-template>
+<!-- <p #elseBlock >This line will be displayed if condition is false</p> wont work -->
+
+<h3 *ngIf ="displayHading ; else elseBlock2" >If variable is true then</h3>
+<ng-template #elseBlock2 >
+    <h4>otherwise this line will be displayed</h4>
+</ng-template>
+
+<!-- this div wont be displayed even if true or false (in both conditions) -->
+<div *ngIf ="displayHading then thenBlock else elseBlock" class="bg-primary"><h1>Inside div</h1></div>
+<ng-template #thenBlock >
+    <h4>will be displayed inside div if true</h4>
+</ng-template>
+<ng-template #elseBlock >
+    <h4>will be displayed inside div if false</h4>
+</ng-template>

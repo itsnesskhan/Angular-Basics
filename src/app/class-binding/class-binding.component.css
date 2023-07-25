@@ -1,0 +1,19 @@
+.mystyleclass{
+
+    color: brown;
+    font-style: italic;
+    display: block;
+    background-color: yellow;
+}
+
+.style1{
+    background-color: orchid;
+    color: blue;
+}
+
+.style2{
+    font-weight: bolder;
+}
+.style3{
+    text-align: center;
+}

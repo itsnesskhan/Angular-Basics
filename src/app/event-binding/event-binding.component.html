@@ -1,0 +1,5 @@
+<h1>Event Binding Component</h1>
+
+Enter Your Name: <input type="text" #inputName />
+<!-- inputName is templateRefrence from which we can fetch the value of it -->
+<button class="btn btn-outline-danger rounded-0" (click)="onClickFun(inputName.value)">greet</button>

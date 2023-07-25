@@ -1,0 +1,9 @@
+<h1>Switch Case Component</h1>
+
+<p>based on the color property i will display color</p>
+<div [ngSwitch]="color">
+    <h4 [style.backgroundColor]="color" *ngSwitchCase ="'red'" >RED</h4>
+    <h4 [style.backgroundColor]="color" *ngSwitchCase ="'yellow'" >YELLOW</h4>
+    <h4 [style.backgroundColor]="color" *ngSwitchCase ="'green'" >GREEN</h4>
+    <h4 [style.backgroundColor]="'orange'" *ngSwitchDefault ="'orange'" >DEFAULT</h4>
+</div>
