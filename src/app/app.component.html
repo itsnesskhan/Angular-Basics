@@ -32,6 +32,12 @@
     <button class="btn btn-outline-primary text-center mx-auto my-3" (click)="navigateToChild()">Send data to child component</button>
     <div class="col-12 d-flex justify-content-sm-around"><a routerLink="/component-interaction" class="btn btn-outline-danger">COMPONENT INTERACTION</a></div>
 </div>
+
+<h3 class="text-center my-3">Lazy Loading</h3>
+<div class="row">
+    <div class="col-6 d-flex justify-content-sm-around"><a routerLink="/product" class="btn btn-outline-danger">Products Component</a></div>
+    <div class="col-6 d-flex justify-content-sm-around"><a [routerLink]="['product',1]" class="btn btn-outline-info">Product Details Component</a></div>
+</div>
 <br>
 <h3 class="text-center">USER COMPONENT</h3>
 <div class="text-center">

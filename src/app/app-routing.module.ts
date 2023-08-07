@@ -42,6 +42,10 @@ const routes: Routes = [
   },
   {path:'component-interaction', component: ComponentInteractionComponent},
   {path:'observables', component: ObservablesComponent},
+
+  //lazy loading router
+  {path:'product', loadChildren: ()=> import('./products/products.module').then(mod=> mod.ProductsModule)},
+
   {path:'page-not-found',component: PageNotFoundComponent},
   {path:'**', redirectTo:'/page-not-found', pathMatch: 'full'}
 ];
